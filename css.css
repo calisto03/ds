@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    border: 0;
+    padding: 0;
+}
+
+body{width: 100vh;
+height: 100vh;
+display: flex;
+justify-content: start;
+align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+background-color: lightgray;}
+
+#leitor_geral{
+    width: 800px;
+height: 500px;
+background-color: rgba(255,255,255,0.6);
+border-radius: 30px;
+box-shadow: 0 40px 100px rgba(150,150,150,0.7);
+overflow: hidden;
+    color: white;
+    font-family: Roboto;
+}
+
+
+.imagem{width: 200px;
+height: 200px;
+background-color: rgba(255,255,255,0.3);
+    border-radius: 30px;
+    box-shadow: 0 40px 100px rgba(150,150,150,0.7);
+    margin-left: auto;
+    margin-right: auto;
+margin-top: 30px;
+}
+
+.music-name,
+.artist-name{margin-top: 20px;}
+
+.music-name{
+    text-align: center;
+    font-size: 40px;
+}
+.artist-name{text-align: center;}
+
+.slider{width: 100%;
+  position: relative;
+
+}
+
+.seek-bar{-webkit-appearance: none;
+width: 90%;
+height: 8px;
+border-radius: 2%;
+    margin-left: 4%;
+background-color: whitesmoke;
+    box-shadow: 0 10px 20px rgba(150,150,150,0.8);
+cursor: pointer;
+    margin-top: 8%;
+    overflow: hidden;
+}
+
+.seek-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 1px;
+    height: 15px;
+    background-color: darkgray;
+    box-shadow: -400px 0 0 400px rgba(150,150,150,0.5) ;
+}
+
+.current-time,
+.song-duration{
+    font-size: 14px;
+}
+
+.song-duration{position: absolute;
+right: 0;}
+
+.controls{width: 60%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: auto;
+}
+
+.imagem{
+    background-image: url("11.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.play{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+.play span{
+    position: absolute;
+top: 50%;
+    left: 25%;
+transform: translateY(-50%);
+width:8px;
+height: 30px;
+border-radius: 2px;
+background:whitesmoke;
+transition: 0.5s;}
+
+.play span:nth-child(2){
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform-origin: center;
+}
+
+.play.pausar span:nth-child(2){
+    transform: translateY(-50%) scaleY(0);
+}
+
+.play.pausar span:nth-child(1){
+    width: 35%;
+    left: 55%;
+    transform:translate(-50%,-50%);
+    border-radius: 0;
+    clip-path: polygon(0 0,100% 50%,100% 50%,0% 100%);
+}
+
+.play.pausar {
+    animation: pulse 2s linear infinite;
+}
+
+
+@keyframes pulse {
+    0%{box-shadow: 0;
+}
+
+    100%{
+        box-shadow: 0 0 0 5px rgba(255,255,255,0.4);
+    }
+
+}
+
+.antes{cursor: pointer;}
+.depois{cursor: pointer;}

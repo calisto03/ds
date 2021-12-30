@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leitor Musica</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<audio src="" id="audio"></audio>
+
+<div id="leitor_geral">
+
+    <h1 class="music-name">Música</h1>
+    <p class="artist-name">Artista</p>
+
+    <div class="imagem"></div>
+    
+    <div class="slider">
+        <input type="range" value="0" class="seek-bar">
+        <span class="current-time">00:00</span>
+        <span class="song-duration">00:00</span>
+    </div>
+
+    <div class="controls">
+        <button class="antes">antes</button>
+        <button class="play pausar">
+            <span></span>
+            <span></span>
+        </button>
+        <button class="depois">depois</button>
+
+    </div>
+
+</div>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
