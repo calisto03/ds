@@ -96,7 +96,7 @@ margin: auto;
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: lightgray;
+    background-color: gray;
     cursor: pointer;
 }
 .play span{
@@ -144,5 +144,36 @@ transition: 0.5s;}
 
 }
 
-.antes{cursor: pointer;}
-.depois{cursor: pointer;}
+.antes{position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;}
+
+.antes span{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width:20px;
+    height: 30px;
+    clip-path: polygon(100% 100%,100% 0%,0% 50%,0% 50%);
+    background:white;
+
+}
+
+.depois{position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;}
+
+.depois span{ position: absolute;
+    top: 25%;
+    left: 40%;
+    width:20px;
+    height: 30px;
+    clip-path: polygon(0 0,100% 50%,100% 50%,0% 100%);
+    background:white;}
+
