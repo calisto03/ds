@@ -28,7 +28,7 @@ const setMusica= (i) =>{
 
   nome_musica.innerHTML=song.name;
   nome_artista.innerHTML=song.artist;
-  imagem.backgroundImage=`url('${song.cover}')`;
+  imagem.style.backgroundImage=`url('${song.cover}')`;
   tempo_atual.innerHTML='00:00';
  setTimeout(()=>{
      barra.max=music.duration;
