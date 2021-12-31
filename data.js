@@ -38,25 +38,25 @@ let songs=[
     {
         name:'Revolução Industrial',
         path:'Musicas/fabrica.wav',
-        artist:'francisca',
+        artist:'Francisca',
         cover:'',
     },
     {
         name:'Segunda Guerra Mundial',
         path:'Musicas/segunda_guerra.wav',
-        artist:'francisca',
+        artist:'Francisca',
         cover:'',
     },
     {
         name:'Nada',
         path:'Musicas/dia_atual.wav',
-        artist:'francisca',
+        artist:'Francisca',
         cover:'',
     },
     {
         name:'Idade Moderna',
         path:'Musicas/dia_atual.wav',
-        artist:'francisca',
+        artist:'Francisca',
         cover:'',
     },
 
